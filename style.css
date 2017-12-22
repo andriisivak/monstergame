@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+  outline: none;
+}
+
+body {
+  background-color: #333;
+}
+
+body:-webkit-full-page-media {
+  background-color: #333;
+}
+
+#header-text {
+  position: relative;
+  width: 800px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ff6600;
+  text-align: center;
+  color: #333;
+  margin: 10px auto 0 auto;
+}
+
+#header-text span {
+  font-weight: bold;
+}
+
+#field {
+  position: relative;
+  width: 800px;
+  height: 480px;
+  background-color: #336699;
+  background-image: url(snow.gif);
+  margin: 0 auto;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ff6600;
+}
+
+h4 {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  color: #ccc;
+}
+
+img.smile {
+  width: 100px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 50px;
+  display: none;
+}
+
+img.monster {
+  cursor: pointer;
+}
+
+img.audio {
+  width: 30px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.buttons {
+  position: absolute;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #ff6600;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color .2s, border .2s;
+}
+
+.buttons:hover {
+  border: 1px solid #fd9c00;
+  color: #fd9c00;
+}
+
+#game-start {
+  bottom: 10px;
+  left: calc(50% - 60px);
+}
+
+#game-end {
+  bottom: 10px;
+  left: calc(50% - 60px);
+  display: none;
+}
+
+#refresh {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  top: calc(50% - 45px);
+  left: calc(50% - 100px);
+  display: none;
+}
+
+#final-score {
+  position: absolute;
+  top: 33%;
+  left: 41%;
+  color: #000;
+  display: none;
+}
+
+.speed {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #ccc;
+}
+
+.speed select {
+  background-color: #336699;
+  color: #ccc;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+#audio-control {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background: url(playpause.png) 0 0;
+  background-size: 200%;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <title>Monster Game 15</title>
+</head>
+<body>
+  <p id="header-text">Play for <span>15 seconds</span> and get
+    <span>max score</span>! &nbsp;&raquo;&nbsp; Just click on the 
+    <span>monster</span>!</p>
+  <div id="field">
+    <div id="overlay"></div>
+    <h2 id="score"></h2>
+    <h4 id="time"></h4>
+    <img src="monster.png" class="monster">
+    <img src="smile.png" class="smile">
+    <h3 id="final-score"></h3>
+    <button id="refresh" class="buttons">reload game</button>
+    <div class="speed">
+      Speed: <select>
+        <option value="2000">-3</option>
+        <option value="1500">-2</option>
+        <option value="1250">-1</option>
+        <option value="1000" selected>0</option>
+        <option value="750">1</option>
+        <option value="500">2</option>
+        <option value="250">3</option>
+      </select>
+    </div>
+    <div id="audio-control"></div>
+    <button id="game-start" class="buttons">start game</button>
+    <button id="game-end" class="buttons">end game</button>
+  </div>
+  <audio autoplay loop><source src="winter.mp3" type="audio/mpeg"></audio>
+  <audio id="wow1" src="wow1.mp3"></audio>
+  <audio id="wow2" src="wow2.mp3"></audio>
+  <audio id="wow3" src="wow3.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
